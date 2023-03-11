@@ -1,4 +1,17 @@
 # LapDepth-release
+
+Some of my own understanding: 
+First is how to find the contour image for L1 - L4: using the original feature map, "subtract" the map after one round of conv net
+
+![image](https://user-images.githubusercontent.com/97998419/224513454-e55d8fc8-0309-445e-90f9-df962394d140.png)
+
+how to interpret the model: 
+we use three things for each level's Conv network, current level's feature map, previous leve's feature map after upconv, previous level's output after upsampling,
+then after conv layer, combine with contour map for this level, the result will be adding together for different level through upsampling.
+
+![image](https://user-images.githubusercontent.com/97998419/224513503-c09115ee-9189-47e1-a516-8fd11cef7940.png)
+
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/monocular-depth-estimation-using-laplacian/monocular-depth-estimation-on-kitti-eigen)](https://paperswithcode.com/sota/monocular-depth-estimation-on-kitti-eigen?p=monocular-depth-estimation-using-laplacian)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/monocular-depth-estimation-using-laplacian/monocular-depth-estimation-on-nyu-depth-v2)](https://paperswithcode.com/sota/monocular-depth-estimation-on-nyu-depth-v2?p=monocular-depth-estimation-using-laplacian)
 
