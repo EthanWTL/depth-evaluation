@@ -9,7 +9,7 @@ how to interpret the model:
 we use three things for each level's Conv network, current level's feature map, previous leve's feature map after upconv, previous level's output after upsampling,
 then after conv layer, combine with contour map for this level, the result will be adding together for different level through upsampling.
 
-![image](https://user-images.githubusercontent.com/97998419/224513503-c09115ee-9189-47e1-a516-8fd11cef7940.png)
+![image (1)](https://user-images.githubusercontent.com/97998419/226211889-0963b4ae-c541-4858-b698-f72f11fd370a.png)
 
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/monocular-depth-estimation-using-laplacian/monocular-depth-estimation-on-kitti-eigen)](https://paperswithcode.com/sota/monocular-depth-estimation-on-kitti-eigen?p=monocular-depth-estimation-using-laplacian)
